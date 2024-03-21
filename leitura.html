@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Uso da Biblioteca de Leitura de Texto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente maker - Instalação e uso do Python</title>
+
+  <link rel="icon" href="img/logo.ico" type="image/x-icon">
+  <meta property="og:title" content="Mente Maker">
+  <meta property="og:description" content="Instalação e Uso do Python">
+  <meta property="og:image" content="https://mentemaker.onrender.com/img/logo.ico">
+  <meta property="og:url" content="https://mentemaker.onrender.com">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Exemplo de Uso da Biblioteca de Leitura de Texto</h1>
-    <p>Este é um parágrafo de exemplo para demonstrar a funcionalidade de leitura de texto.</p>
-    <button id="botaoLer">Ouvir</button>
-    <audio id="audioPlayer" controls style="display: none;"></audio>
-    <script src="https://cdn.jsdelivr.net/gh/Makerjunior/libcdn/mantemakerleitura.main.js"></script>
-    <script>
-        // Iniciar a leitura ao carregar a página
-        iniciarLeitura();
-    </script>
+<body class="light-mode">
+  <header>
+    <div class="container">
+      <h1>Instalação e uso do Python</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/sobre">Sobre</a></li>
+          <li >
+            <button id="botaoLer">
+                Ouvir
+            </button>
+          </li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <span id="theme-icon">🌞</span> <!-- Ícone do tema claro -->
+              <span id="theme-text"></span>
+            </button> 
+          </li>
+          <!-- Adicione mais links conforme necessário -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+        <article>
+            <h2>O que é Python?</h2>
+            <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991 e é amplamente usada em diversas áreas, incluindo desenvolvimento web, ciência de dados, automação, entre outras.</p>
+    
+            <h2>Passo 1: Instalação do Python</h2>
+            <p>Para começar a usar Python, você precisa instalá-lo em seu sistema. Existem diferentes maneiras de fazer isso, mas a forma mais comum é baixar e instalar o Python a partir do site oficial.</p>
+            <p>Visite <a href="https://www.python.org/">https://www.python.org/</a> e baixe a versão mais recente do Python para o seu sistema operacional (Windows, macOS, Linux).</p>
+            <p>Siga as instruções de instalação fornecidas no site para concluir o processo de instalação.</p>
+    
+            <h2>Passo 2: Verificar a Instalação</h2>
+            <p>Após a instalação, você pode verificar se o Python foi instalado corretamente abrindo um terminal (no Windows, você pode usar o Prompt de Comando ou o PowerShell) e digitando o seguinte comando:</p>
+            <div class="code-box">
+              <pre><code>python --version</code></pre>
+            </div>
+            <p>Isso deve exibir a versão do Python instalada em seu sistema.</p>
+    
+            <h2>Passo 3: Executar um Script Python</h2>
+            <p>Agora que o Python está instalado, você pode começar a escrever e executar seus próprios scripts Python. Crie um novo arquivo com a extensão ".py" usando seu editor de texto favorito e adicione algum código Python.</p>
+            <p>Por exemplo, você pode criar um arquivo chamado <code>hello.py</code> com o seguinte conteúdo:</p>
+            <div class="code-box">
+              <pre><code>print("Hello, world!")</code></pre>
+            </div>
+            <p>Salve o arquivo e, em seguida, abra um terminal, navegue até o diretório onde o arquivo <code>hello.py</code> está localizado e execute o seguinte comando:</p>
+            <div class="code-box">
+              <pre><code>python hello.py</code></pre>
+            </div>
+            <p>Você deverá ver a saída "Hello, world!" no terminal.</p>
+    
+            <h2>Conclusão</h2>
+            <p>Agora você está pronto para começar a explorar o mundo da programação com Python! Este tutorial abordou os passos básicos para instalar e usar o Python em seu sistema. Continue praticando e explorando as vastas possibilidades que o Python oferece.</p>
+          </article>
+       
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Mente Maker. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Inclua o script da biblioteca CDN -->
+  <script src="https://unpkg.com/minha-organizacao/minha-repo@versao/biblioteca-leitura.js"></script>
+
+  <script src="js/theme.js"></script>
 </body>
 </html>
