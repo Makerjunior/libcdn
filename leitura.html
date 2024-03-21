@@ -2,63 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mente maker - Instalação e uso do Python</title>
-
-  <link rel="icon" href="img/logo.ico" type="image/x-icon">
-  <meta property="og:title" content="Mente Maker">
-  <meta property="og:description" content="Instalação e Uso do Python">
-  <meta property="og:image" content="https://mentemaker.onrender.com/img/logo.ico">
-  <meta property="og:url" content="https://mentemaker.onrender.com">
-
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="light-mode">
+<body>
   <header>
-    <div class="container">
-         <h1>Instalação e uso do Python</h1>
-  
-            <button id="botaoLer">
-                Play
-            </button>
-          
-       
-
+    <div class="sidebar">
+      <h1>Instalação e uso do Python</h1>
+      <button id="botaoLer">Ouvir</button>
+    </div>
   </header>
+
   <main>
-    <div class="container">
-        <article>
-            <h2>O que é Python?</h2>
-            <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991 e é amplamente usada em diversas áreas, incluindo desenvolvimento web, ciência de dados, automação, entre outras.</p>
-    
-            <h2>Passo 1: Instalação do Python</h2>
-            <p>Para começar a usar Python, você precisa instalá-lo em seu sistema. Existem diferentes maneiras de fazer isso, mas a forma mais comum é baixar e instalar o Python a partir do site oficial.</p>
-            <p>Visite <a href="https://www.python.org/">https://www.python.org/</a> e baixe a versão mais recente do Python para o seu sistema operacional (Windows, macOS, Linux).</p>
-            <p>Siga as instruções de instalação fornecidas no site para concluir o processo de instalação.</p>
-    
-            <h2>Passo 2: Verificar a Instalação</h2>
-            <p>Após a instalação, você pode verificar se o Python foi instalado corretamente abrindo um terminal (no Windows, você pode usar o Prompt de Comando ou o PowerShell) e digitando o seguinte comando:</p>
-            <div class="code-box">
-              <pre><code>python --version</code></pre>
-            </div>
-            <p>Isso deve exibir a versão do Python instalada em seu sistema.</p>
-    
-            <h2>Passo 3: Executar um Script Python</h2>
-            <p>Agora que o Python está instalado, você pode começar a escrever e executar seus próprios scripts Python. Crie um novo arquivo com a extensão ".py" usando seu editor de texto favorito e adicione algum código Python.</p>
-            <p>Por exemplo, você pode criar um arquivo chamado <code>hello.py</code> com o seguinte conteúdo:</p>
-            <div class="code-box">
-              <pre><code>print("Hello, world!")</code></pre>
-            </div>
-            <p>Salve o arquivo e, em seguida, abra um terminal, navegue até o diretório onde o arquivo <code>hello.py</code> está localizado e execute o seguinte comando:</p>
-            <div class="code-box">
-              <pre><code>python hello.py</code></pre>
-            </div>
-            <p>Você deverá ver a saída "Hello, world!" no terminal.</p>
-    
-            <h2>Conclusão</h2>
-            <p>Agora você está pronto para começar a explorar o mundo da programação com Python! Este tutorial abordou os passos básicos para instalar e usar o Python em seu sistema. Continue praticando e explorando as vastas possibilidades que o Python oferece.</p>
-          </article>
-       
+    <div class="container .slidebar">
+      <article>
+        <h2>O que é Python?</h2>
+        <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991 e é amplamente usada em diversas áreas, incluindo desenvolvimento web, ciência de dados, automação, entre outras.</p>
+        <h2>Passo 1: Instalação do Python</h2>
+        <p>Para começar a usar Python, você precisa instalá-lo em seu sistema. Existem diferentes maneiras de fazer isso, mas a forma mais comum é baixar e instalar o Python a partir do site oficial.</p>
+        <p>Visite <a href="https://www.python.org/">https://www.python.org/</a> e baixe a versão mais recente do Python para o seu sistema operacional (Windows, macOS, Linux).</p>
+        <p>Siga as instruções de instalação fornecidas no site para concluir o processo de instalação.</p>
+        <h2>Passo 2: Verificar a Instalação</h2>
+        <p>Após a instalação, você pode verificar se o Python foi instalado corretamente abrindo um terminal (no Windows, você pode usar o Prompt de Comando ou o PowerShell) e digitando o seguinte comando:</p>
+        <div class="code-box">
+          <pre><code>python --version</code></pre>
+        </div>
+        <p>Isso deve exibir a versão do Python instalada em seu sistema.</p>
+        <h2>Passo 3: Executar um Script Python</h2>
+        <p>Agora que o Python está instalado, você pode começar a escrever e executar seus próprios scripts Python. Crie um novo arquivo com a extensão ".py" usando seu editor de texto favorito e adicione algum código Python.</p>
+        <p>Por exemplo, você pode criar um arquivo chamado <code>hello.py</code> com o seguinte conteúdo:</p>
+        <div class="code-box">
+          <pre><code>print("Hello, world!")</code></pre>
+        </div>
+        <p>Salve o arquivo e, em seguida, abra um terminal, navegue até o diretório onde o arquivo <code>hello.py</code> está localizado e execute o seguinte comando:</p>
+        <div class="code-box">
+          <pre><code>python hello.py</code></pre>
+        </div>
+        <p>Você deverá ver a saída "Hello, world!" no terminal.</p>
+        <h2>Conclusão</h2>
+        <p>Agora você está pronto para começar a explorar o mundo da programação com Python! Este tutorial abordou os passos básicos para instalar e usar o Python em seu sistema. Continue praticando e explorando as vastas possibilidades que o Python oferece.</p>
+      </article>
     </div>
   </main>
   <footer class="footer">
@@ -70,7 +53,8 @@
   <script>
     // Iniciar a leitura ao carregar a página
     iniciarLeitura();
-</script>
+  </script>
+>
 
 </body>
 </html>
