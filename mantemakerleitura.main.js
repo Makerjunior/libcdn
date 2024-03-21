@@ -15,13 +15,13 @@ function iniciarLeitura() {
             if (!isLendo) {
                 isLendo = true;
                 botaoLer.classList.add('pausado'); // Adiciona a classe 'pausado' para alterar o ícone
-                botaoLer.textContent = 'Stop';
+                botaoLer.textContent = 'Pause';
                 if (!utterance) {
                     utterance = new SpeechSynthesisUtterance(texto);
                     utterance.lang = 'pt-BR'; // Define o idioma como português do Brasil
                     utterance.onend = function () {
                         isLendo = false;
-                        botaoLer.textContent = 'Paly';
+                        botaoLer.textContent = 'Play';
                         botaoLer.classList.remove('pausado'); // Remove a classe 'pausado' para alterar o ícone de volta para play
                     };
                 } else {
