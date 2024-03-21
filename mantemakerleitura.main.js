@@ -15,13 +15,13 @@ function iniciarLeitura() {
             if (!isLendo) {
                 isLendo = true;
                 botaoLer.classList.add('pausado'); // Adiciona a classe 'pausado' para alterar o ícone
-                botaoLer.textContent = 'Pausar';
+                botaoLer.textContent = 'Stop';
                 if (!utterance) {
                     utterance = new SpeechSynthesisUtterance(texto);
                     utterance.lang = 'pt-BR'; // Define o idioma como português do Brasil
                     utterance.onend = function () {
                         isLendo = false;
-                        botaoLer.textContent = 'Ouvir';
+                        botaoLer.textContent = 'Paly';
                         botaoLer.classList.remove('pausado'); // Remove a classe 'pausado' para alterar o ícone de volta para play
                     };
                 } else {
@@ -33,7 +33,7 @@ function iniciarLeitura() {
             } else {
                 isLendo = false;
                 botaoLer.classList.remove('pausado'); // Remove a classe 'pausado' para alterar o ícone de volta para play
-                botaoLer.textContent = 'Ouvir';
+                botaoLer.textContent = 'Play';
                 window.speechSynthesis.pause();
             }
         } else {
