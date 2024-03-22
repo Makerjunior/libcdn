@@ -1,3 +1,4 @@
+// Definindo a função showAlert
 function showAlert(form, message) {
     var existingAlert = form.parentElement.querySelector('.alert');
     if (existingAlert) {
@@ -15,6 +16,7 @@ function showAlert(form, message) {
     }, 3000);
 }
 
+// Definindo a função validateForm
 function validateForm(form) {
     var email = form.querySelector('input[type="email"]').value;
     var password = form.querySelector('input[type="password"]').value;
@@ -43,6 +45,7 @@ function validateForm(form) {
     return true;
 }
 
+// Adicionando listeners para o evento submit dos formulários
 document.querySelectorAll("form").forEach(function(form) {
     form.addEventListener("submit", function(event) {
         if (!validateForm(form)) {
@@ -51,6 +54,7 @@ document.querySelectorAll("form").forEach(function(form) {
     });
 });
 
+// Adicionando estilos CSS dinamicamente
 var style = document.createElement('style');
 style.type = 'text/css';
 style.innerHTML = `
